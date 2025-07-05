@@ -599,8 +599,8 @@ public class barangMasuk extends javax.swing.JPanel {
 
     try {
         // ✅ Ambil kode dan tanggal dari tabel
-        selectedKode = tblBarang.getValueAt(baris, 0).toString();   // kolom kode_barang
-        selectedTanggal = tblBarang.getValueAt(baris, 4).toString(); // kolom tanggal_masuk (yyyy-MM-dd)
+        selectedKode = tblBarang.getValueAt(baris, 1).toString();   // kolom kode_barang
+        selectedTanggal = tblBarang.getValueAt(baris, 5).toString(); // kolom tanggal_masuk (yyyy-MM-dd)
 
         // ✅ Temukan dan pilih item di combo box berdasarkan kode
         for (int i = 0; i < cbx_kdb.getItemCount(); i++) {
@@ -612,9 +612,9 @@ public class barangMasuk extends javax.swing.JPanel {
         }
 
         // ✅ Set isi field lainnya dari tabel
-        txt_nb.setText(tblBarang.getValueAt(baris, 1).toString());     // nama_barang
-        txt_jumlah.setText(tblBarang.getValueAt(baris, 2).toString()); // jumlah
-        txt_harga.setText(tblBarang.getValueAt(baris, 3).toString());  // harga
+        txt_nb.setText(tblBarang.getValueAt(baris, 2).toString());     // nama_barang
+        txt_jumlah.setText(tblBarang.getValueAt(baris, 3).toString()); // jumlah
+        txt_harga.setText(tblBarang.getValueAt(baris, 4).toString());  // harga
 
         // ✅ Set tanggal
         String tanggalStr = tblBarang.getValueAt(baris, 5).toString(); // tanggal

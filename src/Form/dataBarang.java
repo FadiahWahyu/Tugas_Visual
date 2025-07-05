@@ -559,7 +559,7 @@ public class dataBarang extends javax.swing.JPanel {
     }
 
     private void aktif() {
-        txt_kdb.requestFocus();
+        txt_nb.requestFocus();
     }
 
     private void datatable() {
